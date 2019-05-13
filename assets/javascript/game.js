@@ -29,13 +29,13 @@ targetNumber = Math.floor(Math.random() * 102) + 19;
 
 // Html outputs
 $("#target-number").html(targetNumber);
-$("#crystal1").html(crystal1);
-$("#crystal2").html(crystal2);
-$("#crystal3").html(crystal3);
-$("#crystal4").html(crystal4);
-$("#wins").html(wins);
-$("#losses").html(losses);
-$("#user-score").html(userScore);
+$("#crystal1").text(crystal1);
+$("#crystal2").text(crystal2);
+$("#crystal3").text(crystal3);
+$("#crystal4").text(crystal4);
+$("#wins").text(wins);
+$("#losses").text(losses);
+$("#user-score").text(userScore);
 
 // Console Logs
 // console.log('function/targetNumber: ', targetNumber);
