@@ -1,0 +1,26 @@
+.crystal-btn {
+   background: blue;
+   padding: 25px;
+   margin-right: 5px;
+}
+.target-number-box {
+   background: green;
+   padding: 40px;
+   width: 50px;
+   float: left;
+}
+.win-loss-box {
+   background: yellow;
+   padding: 40px;
+   width: 30px;
+}
+.score-header-box {
+   background: blue;
+   width: 50px;
+   padding: 5px;
+}
+.user-score-box {
+   background: blue;
+   width: 50px;
+   padding: 25;
+}
