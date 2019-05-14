@@ -1,18 +1,17 @@
-.crystal-btn {
-   background: blue;
-   padding: 25px;
-   margin-right: 5px;
-}
 .target-number-box {
    background: green;
-   padding: 40px;
-   width: 50px;
-   float: left;
+   width: 200px;
+   height: 100px;
 }
 .win-loss-box {
    background: yellow;
    padding: 40px;
    width: 30px;
+}
+.crystal-btn {
+   background: blue;
+   padding: 25px;
+   margin-right: 5px;
 }
 .score-header-box {
    background: blue;
@@ -23,4 +22,7 @@
    background: blue;
    width: 50px;
    padding: 25;
+}
+.inline {
+   display: inline;
 }

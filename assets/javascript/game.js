@@ -43,6 +43,12 @@ $("#user-score").text(userScore);
 }
 newRound();
 
+// Click actions
+$("#crystal1").click(function(){
+
+});
+
+
 // Global Console Logs
 console.log("-----Globals------");
 console.log('targetNumber: ', targetNumber);
