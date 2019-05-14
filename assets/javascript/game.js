@@ -45,46 +45,17 @@ targetNumber = Math.floor(Math.random() * 102) + 19;
 
 // Html outputs
 $("#target-number").html(targetNumber);
-$("#crystal1").text(crystal1);
-$("#crystal2").text(crystal2);
-$("#crystal3").text(crystal3);
-$("#crystal4").text(crystal4);
 $("#wins").text(wins);
 $("#losses").text(losses);
 $("#user-score").text(userScore);
-
-// Console Logs
-// console.log('function/targetNumber: ', targetNumber);
-// console.log('function/crystalNumbers: ', crystalNumbers);
 }
-newRound();
 
-// Click actions
-// $("#crystal1").click(function(){
-//    userScore += crystal1
-
-//    $("#user-score").text(userScore);
-//    gameStatus();
-// });
-
+// Click Action
 $(".crystal-btn").click(function(){
    var div_id=$(this).attr("id"); // gives you the ID of the clicked div
    userScore += eval(div_id);
 
    $("#user-score").text(userScore);
    gameStatus();
-   // if(div_id==="crystal1") functionForDiv1();
-   // else if(div_id==="crystal2") functionForDiv2();
-   // else if(div_id==="crystal3") functionForDiv3();
-   // else if(div_id==="crystal4") functionForDiv4();
 });
-
-
-// Global Console Logs
-// console.log("-----Globals------");
-// console.log('targetNumber: ', targetNumber);
-// console.log('crystalNumbers: ', crystalNumbers);
-// console.log('crystal1: ', crystal1);
-// console.log('crystal2: ', crystal2);
-// console.log('crystal3: ', crystal3);
-// console.log('crystal4: ', crystal4);
+newRound();
