@@ -45,10 +45,11 @@ body {
 }
 .crystal-btn {
    display: inline-block;
-   background: black;
-   height: 75px;
+   background: grey;
+   height: 100%;
    width: 75px;
    margin-right: 5px;
+   cursor: pointer;
 }
 .score-header-box {
    background: blue;
