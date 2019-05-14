@@ -11,9 +11,25 @@ var crystal4;
 
 
 // *FUNCTIONS*
+   // Checks to see whether game was won or lost
+function gameStatus() {
+   if (userScore === targetNumber) {
+      alert("You Win!");
+      wins++;
+      newRound();
+   }
+   else if (userScore > targetNumber) {
+      alert("You Lose!");
+      losses++;
+      newRound();
+   }
+   else {}
+}
+
 function newRound() {
    // Reset crystal numbers array to null
 crystalNumbers = [];
+userScore = 0;
 
    // Create for loop to output 4 random numbers
    for (var i = 0; i < 4; i++) {
@@ -44,15 +60,30 @@ $("#user-score").text(userScore);
 newRound();
 
 // Click actions
-$("#crystal1").click(function(){
+// $("#crystal1").click(function(){
+//    userScore += crystal1
 
+//    $("#user-score").text(userScore);
+//    gameStatus();
+// });
+
+$(".crystal-btn").click(function(){
+   var div_id=$(this).attr("id"); // gives you the ID of the clicked div
+   userScore += eval(div_id);
+
+   $("#user-score").text(userScore);
+   gameStatus();
+   // if(div_id==="crystal1") functionForDiv1();
+   // else if(div_id==="crystal2") functionForDiv2();
+   // else if(div_id==="crystal3") functionForDiv3();
+   // else if(div_id==="crystal4") functionForDiv4();
 });
 
 
 // Global Console Logs
-console.log("-----Globals------");
-console.log('targetNumber: ', targetNumber);
-console.log('crystalNumbers: ', crystalNumbers);
+// console.log("-----Globals------");
+// console.log('targetNumber: ', targetNumber);
+// console.log('crystalNumbers: ', crystalNumbers);
 // console.log('crystal1: ', crystal1);
 // console.log('crystal2: ', crystal2);
 // console.log('crystal3: ', crystal3);
