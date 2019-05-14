@@ -34,10 +34,14 @@ body {
 }
 .win-loss-box {
    background: yellow;
+   font-size: 2vw;
    width: 10%;
    height: 100px;
    padding: 5px;
    margin: 5px;
+}
+.win-loss-box ul {
+   margin-top: 15px;
 }
 .crystals-box {
    height: 75px;
@@ -45,7 +49,8 @@ body {
 }
 .crystal-btn {
    display: inline-block;
-   background: grey;
+   background-image: url(../images/crystal.png);
+   background-repeat: no-repeat;
    height: 100%;
    width: 75px;
    margin-right: 5px;
