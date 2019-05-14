@@ -4,7 +4,7 @@
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-   <link rel="stylesheet" href="assets/css/normalize.css">
+   <link rel="stylesheet" href="assets/css/reset.css">
    <link rel="stylesheet" href="assets/css/style.css">
    <script src="https://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
    <title>Crystals Collector Game</title>
@@ -12,7 +12,7 @@
 <body>
    <!-- Header -->
    <header>
-      <h1 class="title-header">CrystalsCollector!</h1>
+      <h2 class="title-header">CrystalsCollector!</h2>
    </header>
 
    <!-- Rules Section -->
@@ -36,19 +36,23 @@
 
    <!-- Game Play Area -->
    <div class="target-number-box in-line">
-      <h1><span id="target-number" class="target-number">ERROR</span></h1>
+      <span id="target-number" class="target-number">ERROR</span>
    </div>
    <div class="win-loss-box in-line">
-      <span id="wins">ERROR</span>
-      <span id="losses">ERROR</span>
-   </div><br>
-   <div class="crystals">
+      <ul><br>
+         <li>Wins: <span id="wins">ERROR</span></li><br>
+         <li>Losses: <span id="losses">ERROR</span></li>
+      </ul>
+   </div>
+   <div class="crystals-box">
       <span id="crystal1" class="crystal-btn">ERROR</span>
       <span id="crystal2" class="crystal-btn">ERROR</span>
       <span id="crystal3" class="crystal-btn">ERROR</span>
       <span id="crystal4" class="crystal-btn">ERROR</span>
-   </div><br>
-   <div class="score-header-box"></div>
+   </div>
+   <div class="score-header-box">
+      <h2>Your total score is:</h2>
+   </div>
    <div class="user-score-box">
       <span id="user-score">ERROR</span>
    </div>
