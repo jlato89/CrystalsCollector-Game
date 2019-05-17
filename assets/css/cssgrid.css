@@ -1,0 +1,28 @@
+body {
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr 1fr;
+   grid-template-rows: auto auto auto auto auto;
+   grid-template-areas: 
+   "header header . ." 
+   "rules rules . ." 
+   "target win-loss . ." 
+   "crystals crystals . ." 
+   "score-header score-header . ."
+   "score score . .";
+ }
+
+header {grid-area: header;}
+.rules-box {grid-area: rules;width: 100%;}
+.target-number-box {
+   grid-area: target;
+   width: 200px;
+   font-size: 2rem;
+}
+.win-loss-box {
+   grid-area: win-loss;
+   width: 75px;
+   font-size: 1rem;
+}
+.crystals-box {grid-area: crystals;}
+.score-header-box {grid-area: score-header;width: 200px;}
+.user-score-box {grid-area: score;width: 200px;}
